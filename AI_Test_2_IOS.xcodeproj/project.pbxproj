@@ -15,6 +15,11 @@
 		93E217B22048CBCA00EDB0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E217B02048CBCA00EDB0DD /* LaunchScreen.storyboard */; };
 		93E217BD2048CBCA00EDB0DD /* AI_Test_2_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217BC2048CBCA00EDB0DD /* AI_Test_2_IOSTests.swift */; };
 		93E217C82048CBCA00EDB0DD /* AI_Test_2_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217C72048CBCA00EDB0DD /* AI_Test_2_IOSUITests.swift */; };
+		93E217DA2048CF9D00EDB0DD /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217D92048CF9D00EDB0DD /* Train.swift */; };
+		93E217DC2048CFEA00EDB0DD /* SpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217DB2048CFEA00EDB0DD /* SpriteComponent.swift */; };
+		93E217DE2048D18800EDB0DD /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217DD2048D18800EDB0DD /* EntityManager.swift */; };
+		93E217E02048D3BC00EDB0DD /* FollowBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217DF2048D3BC00EDB0DD /* FollowBehaviour.swift */; };
+		93E217E22048D50F00EDB0DD /* FollowComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E217E12048D50F00EDB0DD /* FollowComponet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		93E217C32048CBCA00EDB0DD /* AI_Test_2_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AI_Test_2_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E217C72048CBCA00EDB0DD /* AI_Test_2_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI_Test_2_IOSUITests.swift; sourceTree = "<group>"; };
 		93E217C92048CBCA00EDB0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E217D92048CF9D00EDB0DD /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		93E217DB2048CFEA00EDB0DD /* SpriteComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponent.swift; sourceTree = "<group>"; };
+		93E217DD2048D18800EDB0DD /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		93E217DF2048D3BC00EDB0DD /* FollowBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowBehaviour.swift; sourceTree = "<group>"; };
+		93E217E12048D50F00EDB0DD /* FollowComponet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowComponet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,9 @@
 		93E217A02048CBCA00EDB0DD /* AI_Test_2_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				93E217D82048CF6700EDB0DD /* Behaviours */,
+				93E217D72048CF5400EDB0DD /* Components */,
+				93E217D62048CF4000EDB0DD /* Entities */,
 				93E217D52048CBDD00EDB0DD /* System */,
 				93E217A72048CBCA00EDB0DD /* GameScene.swift */,
 				93E217A92048CBCA00EDB0DD /* GameViewController.swift */,
@@ -134,6 +147,32 @@
 				93E217B02048CBCA00EDB0DD /* LaunchScreen.storyboard */,
 			);
 			path = System;
+			sourceTree = "<group>";
+		};
+		93E217D62048CF4000EDB0DD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				93E217D92048CF9D00EDB0DD /* Train.swift */,
+				93E217DD2048D18800EDB0DD /* EntityManager.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		93E217D72048CF5400EDB0DD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				93E217DB2048CFEA00EDB0DD /* SpriteComponent.swift */,
+				93E217E12048D50F00EDB0DD /* FollowComponet.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		93E217D82048CF6700EDB0DD /* Behaviours */ = {
+			isa = PBXGroup;
+			children = (
+				93E217DF2048D3BC00EDB0DD /* FollowBehaviour.swift */,
+			);
+			path = Behaviours;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E217DA2048CF9D00EDB0DD /* Train.swift in Sources */,
+				93E217DC2048CFEA00EDB0DD /* SpriteComponent.swift in Sources */,
+				93E217DE2048D18800EDB0DD /* EntityManager.swift in Sources */,
 				93E217A82048CBCA00EDB0DD /* GameScene.swift in Sources */,
 				93E217AA2048CBCA00EDB0DD /* GameViewController.swift in Sources */,
+				93E217E02048D3BC00EDB0DD /* FollowBehaviour.swift in Sources */,
 				93E217A22048CBCA00EDB0DD /* AppDelegate.swift in Sources */,
+				93E217E22048D50F00EDB0DD /* FollowComponet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
