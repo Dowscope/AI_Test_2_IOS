@@ -13,7 +13,7 @@ class FollowBehaviour: GKBehavior {
     init(maxSpeed: Float, path: GKPath) {
         super.init()
         
-        setWeight(1.0, for: GKGoal(toStayOn: path, maxPredictionTime: 1.0))
-        setWeight(1.0, for: GKGoal(toFollow: path, maxPredictionTime: 1.0, forward: true))
+        setWeight(1.0, for: GKGoal(toStayOn: path, maxPredictionTime: 1000.0))
+        setWeight(1.0, for: GKGoal(toFollow: path, maxPredictionTime: 1000.0, forward: true))
     }
 }

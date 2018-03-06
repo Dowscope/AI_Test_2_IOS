@@ -45,6 +45,10 @@ class FollowComponet: GKAgent2D, GKAgentDelegate {
         
         behavior = FollowBehaviour(maxSpeed: maxSpeed, path: path)
     }
+    
+    func updatePath(_ path: GKPath){
+        self.path = path
+    }
 }
 
 extension CGPoint {
